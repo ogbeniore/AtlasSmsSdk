@@ -9,11 +9,25 @@
     <SignAssembly>False</SignAssembly>
     <AssemblyOriginatorKeyFile>Atlas-sms-sdk.pfx</AssemblyOriginatorKeyFile>
     <DelaySign>False</DelaySign>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <RepositoryType>Open Source</RepositoryType>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Authors>Ogbeniore</Authors>
+    <Company>Atlas.Sms</Company>
+    <NeutralLanguage>en-NG</NeutralLanguage>
+    <PackageReleaseNotes>C# Wrapper for Atlas Sms</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Test.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />

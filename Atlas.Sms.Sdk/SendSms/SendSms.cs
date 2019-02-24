@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 using System.Net.Http;
 
 
-namespace Atlas.Sms.Sdk.Send
+namespace Atlas.Sms.Sdk.SendSms
 {
-    public class SendSms : ISendSms
+    public class Sms : ISendSms
     {
         private string _accessKey;
         private string _secretKey;
 
-        public SendSms(String accessKey, String secretKey)
+        public Sms(String accessKey, String secretKey)
         {
             this._accessKey = accessKey;
             this._secretKey = secretKey;

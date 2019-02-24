@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Atlas.Sms.Sdk": {
+      "commandName": "Executable"
+    }
+  }
+}

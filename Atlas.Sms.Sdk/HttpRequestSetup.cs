@@ -20,7 +20,7 @@ namespace Atlas.Sms.Sdk
 
             var keysArray = new String[]{accesKey, secretKey};
 
-            var byteArray = Encoding.ASCII.GetBytes(String.Join(":", keysArray));
+            var byteArray = Encoding.Unicode.GetBytes(String.Join(":", keysArray));
 
             client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
 
